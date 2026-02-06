@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+
+# npm
+package-lock.json
+
+# build output
+dist/
+
+# legacy repo
+Fluxa-old/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# coverage
+coverage/
+
+# OS
+.DS_Store
+
+# editor
+.vscode/
+
+# env
+.env
+.env.*
+
+# temp
+*.tmp
+*.swp
