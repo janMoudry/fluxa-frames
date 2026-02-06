@@ -19,15 +19,21 @@
 	"sideEffects": false,
 	"scripts": {
 		"build": "tsup src/index.ts --format cjs,esm --dts --clean",
+		"lint": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
 		"typecheck": "tsc --noEmit",
-		"test": "vitest",
+		"test": "vitest run",
 		"prepublishOnly": "npm run build && npm run typecheck"
 	},
 	"peerDependencies": {
-		"@moudrey/fluxa-core": "^0.0.1"
+		"@moudrey/fluxa-core": "^0.0.2"
 	},
 	"devDependencies": {
-		"@moudrey/fluxa-core": "^0.0.1",
+		"@moudrey/fluxa-core": "^0.0.2",
+		"@typescript-eslint/eslint-plugin": "^7.0.1",
+		"@typescript-eslint/parser": "^7.0.1",
+		"eslint": "^8.57.0",
+		"eslint-plugin-import": "^2.29.1",
+		"jsdom": "^24.0.0",
 		"tsup": "^8.0.2",
 		"typescript": "^5.4.5",
 		"vitest": "^2.0.5"
@@ -41,5 +47,13 @@
 		"frame"
 	],
 	"author": "Jan Moudry",
-	"license": "MIT"
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/janMoudry/fluxa-core.git"
+	},
+	"homepage": "https://github.com/janMoudry/fluxa-core",
+	"bugs": {
+		"url": "https://github.com/janMoudry/fluxa-core/issues"
+	}
 }
