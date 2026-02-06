@@ -1,6 +1,6 @@
 {
 	"name": "@moudrey/fluxa-frames",
-	"version": "0.1.0",
+	"version": "0.0.1",
 	"description": "Fluxa plugin for cross-frame transport.",
 	"type": "module",
 	"main": "dist/index.cjs",
