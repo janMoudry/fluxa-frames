@@ -59,6 +59,10 @@ bus.on("widget:ready", (payload) => {
 - If `allowedOrigins` is not provided, messages from any origin are accepted. In production, always restrict this.
 - The transport uses `meta.path` to prevent loops; `maxHops` provides a hard stop.
 
+## Repository
+
+Source code: https://github.com/janMoudry/fluxa-frames
+
 ## Development
 
 ```bash
@@ -70,4 +74,3 @@ npm run test
 ## License
 
 MIT (c) Jan Moudry
-# fluxa-frames
